@@ -1,13 +1,13 @@
 # Pouring image in docker
-    - To list all the running containers (shows a table)
+- To list all the running containers (shows a table)
     ```
     docker ps
     ```
-    - To list all available images
+- To list all available images
     ```
     docker images
     ```
-    - Put your first image
+- Put your first image
     Link: https://hub.docker.com/_/postgres
     ```
     docker pull postgres:16-alpine
@@ -18,7 +18,7 @@
     docker pull <image>:<tag>
     *Alpine is a light weight edition of the image
     
-    -Running the image container(container is a running instance of image, a single image can be used to run multiple container)
+- Running the image container(container is a running instance of image, a single image can be used to run multiple container)
     ```
     docker run --name<container_name> -e <environment_variable> -p <host_ports:container_ports> -d <image>:<tag>
     ```
@@ -29,7 +29,7 @@
     ```
     use docker ps to see if the container is running or not.
 
-    - Now the postgres server is ready lets try to connect and access the console
+- Now the postgres server is ready lets try to connect and access the console
     ```
     docker exec -it <container_name_or_id> <command> [args]
     ```
@@ -53,9 +53,9 @@
     ```
 
 #   TablePlus 
-    -provides an easy way to interact with the databases.
-    -install it and add a new PostGres engine connection.
-    -configuration
+- provides an easy way to interact with the databases.
+- install it and add a new PostGres engine connection.
+- configuration
         Host: 127.0.0.1
         port: 5432
         User: root
@@ -64,5 +64,5 @@
 
         Then hit test and make sure connection successful pops up.
 
-    - Paste the schema query generated for postgres sql and run and refresh you shall see all the tables created.
+- Paste the schema query generated for postgres sql and run and refresh you shall see all the tables created.
         path: 1. Creating DB Schema\Simple Bank.sql
